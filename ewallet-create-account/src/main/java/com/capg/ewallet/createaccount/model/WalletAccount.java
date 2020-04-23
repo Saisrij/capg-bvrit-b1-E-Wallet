@@ -2,11 +2,16 @@ package com.capg.ewallet.createaccount.model;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class WalletAccount {
 
+	@Id
 	private int accountId;
 	private double accountBalance;
-	private enum status{ };
+	private enum Status{ };
 	private List<WalletTransactions> transactionHistory;
 	public int getAccountId() {
 		return accountId;

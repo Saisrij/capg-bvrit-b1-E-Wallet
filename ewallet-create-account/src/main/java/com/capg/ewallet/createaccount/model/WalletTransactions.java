@@ -2,7 +2,13 @@ package com.capg.ewallet.createaccount.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class WalletTransactions {
+	
+	@Id
 	private int transactionId;
 	private String description;
 	private LocalDateTime dateOfTransaction;
