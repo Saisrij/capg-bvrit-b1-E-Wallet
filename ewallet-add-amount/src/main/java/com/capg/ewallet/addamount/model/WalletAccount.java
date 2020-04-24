@@ -3,16 +3,34 @@ package com.capg.ewallet.addamount.model;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class WalletAccount {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int accountId;
 	private double accountBalance;
 	private enum Status{ };
+	
+	@OneToMany(targetEntity = WalletTransactions.class, fetch = FetchType.EAGER)
 	private List<WalletTransactions> transactionHistory;
+	
+	@OneToOne
+	private WalletUser walletUser;
+	
+	public WalletUser getWalletUser() {
+		return walletUser;
+	}
+	public void setWalletUser(WalletUser walletUser) {
+		this.walletUser = walletUser;
+	}
 	public int getAccountId() {
 		return accountId;
 	}
