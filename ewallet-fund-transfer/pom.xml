@@ -9,16 +9,25 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.capg.ewallet</groupId>
-	<artifactId>ewallet-create-account</artifactId>
+	<artifactId>ewallet-fund-transfer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ewallet-create-account</name>
-	<description>Creating new account for users</description>
+	<description>Transfering funds</description>
+	
+	
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+    <version>2.2.6.RELEASE</version>
+</dependency>
+	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
