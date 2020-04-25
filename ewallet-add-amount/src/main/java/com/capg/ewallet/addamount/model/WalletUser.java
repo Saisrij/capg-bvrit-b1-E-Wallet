@@ -1,4 +1,4 @@
-package com.capg.ewallet.createaccount.model;
+package com.capg.ewallet.addamount.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

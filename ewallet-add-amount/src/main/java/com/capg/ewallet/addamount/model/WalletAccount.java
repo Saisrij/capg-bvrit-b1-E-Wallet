@@ -1,4 +1,4 @@
-package com.capg.ewallet.createaccount.model;
+package com.capg.ewallet.addamount.model;
 
 import java.util.List;
 
@@ -19,13 +19,11 @@ public class WalletAccount {
 	private double accountBalance;
 	private enum Status{ };
 	
-	@OneToOne
-	private WalletUser walletUser;
-	
 	@OneToMany(targetEntity = WalletTransactions.class, fetch = FetchType.EAGER)
 	private List<WalletTransactions> transactionHistory;
 	
-	
+	@OneToOne
+	private WalletUser walletUser;
 	
 	public WalletUser getWalletUser() {
 		return walletUser;

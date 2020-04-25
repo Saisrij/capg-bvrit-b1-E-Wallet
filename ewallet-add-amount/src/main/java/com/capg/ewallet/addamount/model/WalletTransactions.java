@@ -1,4 +1,4 @@
-package com.capg.ewallet.createaccount.model;
+package com.capg.ewallet.addamount.model;
 
 import java.time.LocalDateTime;
 
