@@ -1,4 +1,4 @@
-package com.capg.ewallet.addamount.controller;
+package com.capg.ewallet.transactionms.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capg.ewallet.addamount.model.WalletAccount;
-import com.capg.ewallet.addamount.service.AddAmountServiceImpl;
+import com.capg.ewallet.transactionms.model.WalletAccount;
+import com.capg.ewallet.transactionms.service.AddAmountServiceImpl;
 
 @RestController
 @RequestMapping("/add")

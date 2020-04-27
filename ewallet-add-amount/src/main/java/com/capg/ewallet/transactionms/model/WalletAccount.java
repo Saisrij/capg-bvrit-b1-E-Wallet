@@ -1,4 +1,4 @@
-package com.capg.ewallet.addamount.model;
+package com.capg.ewallet.transactionms.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.capg.ewallet.createaccount.controller;
+package com.capg.ewallet.accountms.controller;
 
 import java.util.List;
 
@@ -9,15 +9,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.capg.ewallet.createaccount.model.WalletUser;
-import com.capg.ewallet.createaccount.service.CreateAccountServiceImpl;
+import com.capg.ewallet.accountms.model.WalletUser;
+import com.capg.ewallet.accountms.service.CreateAccountServiceImpl;
+import com.capg.ewallet.accountms.service.ICreateAccountService;
 
 @RestController
 @RequestMapping("/create")
 public class CreateAccountController {
 	
 	@Autowired
-	CreateAccountServiceImpl service;
+	ICreateAccountService service;
 	
 	@PostMapping("/user")
 	public WalletUser createUserAccount(@RequestBody WalletUser user) {

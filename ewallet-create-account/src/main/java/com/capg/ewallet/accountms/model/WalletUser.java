@@ -1,4 +1,4 @@
-package com.capg.ewallet.addamount.model;
+package com.capg.ewallet.accountms.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,15 +17,15 @@ public class WalletUser {
 	private long phoneNumber;
 	private String loginName;
 	
-	@OneToOne(mappedBy = "walletUser")
-	private WalletAccount walletAccount;
-	
-	public WalletAccount getWalletAccount() {
-		return walletAccount;
-	}
-	public void setWalletAccount(WalletAccount walletAccount) {
-		this.walletAccount = walletAccount;
-	}
+//	@OneToOne
+//	private WalletAccount walletAccount;
+//	
+//	public WalletAccount getWalletAccount() {
+//		return walletAccount;
+//	}
+//	public void setWalletAccount(WalletAccount walletAccount) {
+//		this.walletAccount = walletAccount;
+//	}
 	public int getUserId() {
 		return userId;
 	}

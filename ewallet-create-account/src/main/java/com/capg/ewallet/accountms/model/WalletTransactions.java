@@ -1,4 +1,4 @@
-package com.capg.ewallet.createaccount.model;
+package com.capg.ewallet.accountms.model;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 public class WalletTransactions {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int transactionId;
 	private String description;
 	private LocalDateTime dateOfTransaction;

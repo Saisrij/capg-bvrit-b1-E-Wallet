@@ -16,11 +16,11 @@ import com.capg.ewallet.fundtransfer.service.FundTransferServiceImpl;
 public class FundTransferController {
 	@Autowired
 	FundTransferServiceImpl service;
-	@GetMapping("/account/id/{id}/id/{id}")
-	public WalletAccount fundtransfer(@PathVariable ("id") String fromaccountid,@PathVariable ("id") String toaccountid, @RequestBody double amount) {
-		WalletAccount account1=service.getByAccountId();
-		WalletAccount account2=service.getByAccountId();
-		return service.fundtransfer(amount, account1,account2);
+	@GetMapping("/account/id/{fromId}/id/{toId}")
+	public WalletAccount fundtransfer(@PathVariable ("fromId") int fromAccountId,@PathVariable ("toId") int toAccountId, @RequestBody double amount) {
+		WalletAccount fromAccount=service.getAccountById(fromAccountId);
+		WalletAccount toAccount=service.getAccountById(toAccountId);
+		return service.fundtransfer(amount, fromAccount,toAccount);
 	}
 	
 

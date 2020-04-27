@@ -1,13 +1,13 @@
-package com.capg.ewallet.addamount;
+package com.capg.ewallet.transactionms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EwalletAddAmountApplication {
+public class EwalletTransactionMSApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EwalletAddAmountApplication.class, args);
+		SpringApplication.run(EwalletTransactionMSApplication.class, args);
 	}
 
 }

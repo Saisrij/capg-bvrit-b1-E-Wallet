@@ -1,6 +1,6 @@
-package com.capg.ewallet.addamount.service;
+package com.capg.ewallet.transactionms.service;
 
-import com.capg.ewallet.addamount.model.WalletAccount;
+import com.capg.ewallet.transactionms.model.WalletAccount;
 
 public interface AddAmountService {
 	

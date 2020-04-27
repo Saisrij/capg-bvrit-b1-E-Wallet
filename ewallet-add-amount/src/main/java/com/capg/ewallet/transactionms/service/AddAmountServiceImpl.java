@@ -1,12 +1,12 @@
-package com.capg.ewallet.addamount.service;
+package com.capg.ewallet.transactionms.service;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.capg.ewallet.addamount.model.WalletAccount;
-import com.capg.ewallet.addamount.repository.AddAmountRepo;
+import com.capg.ewallet.transactionms.model.WalletAccount;
+import com.capg.ewallet.transactionms.repository.AddAmountRepo;
 
 @Service
 public class AddAmountServiceImpl implements AddAmountService {
